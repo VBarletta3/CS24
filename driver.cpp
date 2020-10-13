@@ -58,7 +58,7 @@ int main(int argc, char* argv[])
     if(files[i][0]=='.') continue; //skip hidden files
     cout << "OPEN " << files[i] << endl;
     ifstream fin((string(argv[1])+slash+files[i]).c_str()); //open using absolute path
-    sort(files.begin(), files.end());// ...read the file..
+    // ...read the file..
     string word;
     while(true){
       fin>>word;
